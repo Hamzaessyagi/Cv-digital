@@ -13,6 +13,8 @@ body{
 
 .page{
     display: flex;
+    justify-content: space-between;
+    gap:1rem;
 }
 
 /*minopage 1*/
@@ -120,7 +122,7 @@ body{
 
 /*minipage2*/
 .minipage2{
-    margin-left: 14%;
+    margin-left: 5%;
 }
 .header1{
     display: flex;
@@ -455,7 +457,7 @@ section{
     color: white;
     display: flex;
     justify-content: start;
-    width: 105%;
+    width: 100%;
     font-weight: bold;
     font-size: large;
 }
