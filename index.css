@@ -27,6 +27,7 @@ body{
     align-items: center;
     border-radius: 11px;
     height: 129rem;
+    font-family:'Courier New', Courier, monospace;
  
 }
 .prfl{
@@ -56,6 +57,9 @@ body{
     gap: 5px;
     
 }
+.r i{
+    color: black;
+}
 .r{
     width: 26px;
     height: 26px;
@@ -64,6 +68,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.r:hover{
+    background: #0246f28f;
+    transform: scale(1.1);
 }
 /*2*/
 .la{
@@ -349,6 +358,7 @@ section{
     border-radius:10px;
     border:2px solid #941df747;
     justify-content: center;
+    width: 50%;
 }
 .learn{
     width: 9rem;
@@ -381,7 +391,7 @@ section{
 .fond-gradient {
     position: absolute;
     width: 34%;
-    height: 100%;
+
     z-index: 0;
 }
 .section3{
@@ -609,7 +619,13 @@ footer{
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+
 }
+.con:hover {
+    background: #cac5d1;  /* couleur un peu plus claire */
+    transform: scale(1.05); /* effet de zoom léger */
+  }
 
 
 
@@ -815,7 +831,25 @@ footer{
       gap: 1rem;
       flex-direction: column;
     }
-  
+    .allcerc{
+        width: 70%;
+    }
+    .c{
+        width: 2rem;
+        height: 2rem;
+
+    }
+    .c img{
+        width: 1rem;
+
+    }
+    .cercle1{
+        width: 21rem;
+        height: 2rem;
+        justify-content: start;
+        margin-left: -2rem;
+      
+    }
     .vd video {
       width: 100%;
     }
@@ -856,5 +890,13 @@ footer{
     .prjt{
         width: 80%;
     }
+  }
+  #contact-bar {
+    background-color: #00000050;
+    padding: 10px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
   }
   

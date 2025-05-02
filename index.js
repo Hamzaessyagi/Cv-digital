@@ -8,3 +8,13 @@ descc.addEventListener('click', () => {
         vd.style.display = "none";  // Cacher la vidéo
     }
 });
+
+function toggleContact() {
+  const bar = document.getElementById('contact-bar');
+  if (bar.style.display === 'none') {
+    bar.style.display = 'block';
+  } else {
+    bar.style.display = 'none';
+  }
+}
+
