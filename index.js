@@ -17,4 +17,21 @@ function toggleContact() {
     bar.style.display = 'none';
   }
 }
+const learnButtons = document.querySelectorAll('.learn');
+
+  learnButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const paragraph = button.parentElement;
+      const moreDetails = paragraph.querySelector('.more-details');
+
+      
+      if (moreDetails.style.display === 'none' || moreDetails.style.display === '') {
+        moreDetails.style.display = 'block';
+        button.textContent = 'SHOW LESS';
+      } else {
+        moreDetails.style.display = 'none';
+        button.textContent = 'LEARN MORE';
+      }
+    });
+  });
 
